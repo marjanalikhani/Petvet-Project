@@ -1,0 +1,431 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+:root {
+    --primary-color: #FD4C82;
+    --back-color: #F8F9FA;
+    --btn-color: #91C235;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-primery {
+    color: var(--primary-color)
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.active {
+    color: var(--primary-color);
+    transition: 0.3s;
+
+}
+
+.active:hover {
+    color: black;
+}
+
+header {
+    background: linear-gradient(rgba(128, 128, 128, 0.3), rgba(128, 128, 128, 0.3)), url(../images/bg_1.jpg) no-repeat center center /cover;
+}
+
+header .contact {
+    padding: 13px 0;
+
+}
+
+header .contact div:first-child {
+    font-size: 12px;
+    color: gray;
+
+}
+
+header .contact div:first-child span {
+    color: black;
+    font-weight: bold;
+}
+
+header .contact i {
+    background-color: white;
+    border-radius: 50%;
+    padding: 7px;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+header .contact i:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+
+}
+
+nav {
+    background-color: white;
+    padding: 18px;
+}
+
+nav ul {
+    gap: 60px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.logo i {
+    font-size: 35px;
+    color: var(--primary-color);
+}
+
+.logo h4 {
+    font-size: 20px;
+}
+
+.logo h4 span {
+    font-size: 11px;
+    color: var(--primary-color);
+}
+
+nav ul li:last-child>a,
+.call-to-actions>a {
+    background-color: var(--primary-color);
+    padding: 19px 20px;
+    display: inline-block;
+    color: white;
+    transition: 0.4s;
+}
+
+nav ul li:last-child>a:hover {
+    color: black;
+}
+
+.intro {
+    padding: 60px 0;
+    width: 40%;
+}
+
+.intro h1 {
+    font-size: 54px;
+    margin-bottom: 30px;
+}
+
+.intro p,
+.welcome-text>p {
+    color: gray;
+    line-height: 28px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    margin-bottom: 40px;
+}
+
+.call-to-actions>a,
+.appointment .container form button {
+    border-radius: 5px;
+}
+
+.call-to-actions>a:nth-child(2),
+.appointment .container form button {
+    border: #91C235 1px solid;
+    background-color: #91C235;
+
+}
+
+.call-to-actions>a:nth-child(2):hover,
+.appointment .container form button:hover {
+    border: #91C235 1px solid;
+    color: #91C235;
+    background-color: transparent;
+}
+
+.services {
+    gap: 25px;
+    transform: translate(0, 50%);
+}
+
+.services-child {
+    background-color: white;
+    gap: 22px;
+    line-height: 30px;
+    padding: 20px;
+    flex-grow: 1;
+    border-radius: 5px;
+}
+
+.services-child:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transition: 0.3s;
+
+}
+
+.services-child:hover i {
+    background-color: white;
+    transition: 0.3s;
+}
+
+.services-child>i {
+    font-size: 40px;
+    background: rgb(210, 210, 210);
+    border-radius: 50%;
+    padding: 12px;
+    color: var(--primary-color);
+
+
+}
+
+.services-child>p {
+    color: gray;
+    font-size: 17px;
+}
+
+.welcome {
+    background-color: var(--back-color);
+    padding-top: 150px;
+}
+
+.welcome .welcome-image {
+    background: url('../Images/about.jpg') no-repeat center center /cover;
+    width: 40%;
+}
+
+.welcome .welcome-text {
+    width: 60%;
+    padding-top: 100px;
+    padding-left: 50px;
+}
+
+.welcome .welcome-text span {
+    color: var(--primary-color);
+}
+
+.welcome .welcome-text h3 {
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.welcome i {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 25px;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.welcome ul li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    gap: 20px;
+}
+
+.appointment {
+    margin: 50px 0;
+}
+
+.appointment h4 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.appointment .container form input,
+.appointment .container form select,
+.appointment .container form textarea,
+.appointment .container form button {
+    width: 20%;
+    flex-grow: 1;
+    border: 1px solid rgb(160, 160, 160);
+    /* padding: 15px; */
+    font-size: 18px;
+    color: rgb(160, 160, 160);
+    font-weight: normal;
+    height: 40px;
+    padding-left: 5px;
+    font-family: sans-serif;
+}
+
+.appointment textarea {
+    padding-top: 5px;
+
+    resize: none;
+}
+
+
+form>div.d-flex {
+    column-gap: 30px;
+    row-gap: 13px;
+}
+
+
+
+.appointment input:focus {
+    outline: none;
+}
+
+
+.appointment .container form button {
+    color: white;
+}
+
+.groomers {
+    background-color: var(--back-color);
+    padding-top: 100px;
+}
+
+.groomers .container h5 {
+    color: var(--primary-color);
+    width: 100%;
+    display: block;
+    text-align: center;
+
+
+}
+
+.groomers .container h2 {
+    width: 100%;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 100px;
+
+}
+
+/* GROOMERS */
+.grooms {
+    padding-bottom: 100px;
+    gap: 20px;
+}
+
+.grooms .box-groom {
+    background-color: white;
+    width: 20%;
+    height: 300px;
+    position: relative;
+}
+
+.grooms .box-groom img {
+    border-radius: 50%;
+    border: 10px solid var(--back-color);
+    width: 70%;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.grooms .box-groom h4 {
+    width: 100;
+    position: absolute;
+    padding-top: 150px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 14px;
+}
+
+.grooms .box-groom h5 {
+    position: absolute;
+    padding-top: 180px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: var(--primary-color);
+}
+
+.grooms .box-groom div {
+    position: absolute;
+    color: var(--primary-color);
+    padding-top: 230px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.grooms .box-groom div i {
+
+    padding: 5px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 3px;
+}
+
+div.grooms .box-groom:hover {
+    background-color: var(--btn-color);
+}
+
+
+div.grooms .box-groom:hover h4 {
+    color: white;
+}
+
+div.grooms .box-groom:hover h5 {
+    color: white;
+}
+
+div.grooms .box-groom:hover div i {
+    color: var(--btn-color);
+    background-color: white;
+}
+
+
+
+/* READ TESTIMONIALS */
+
+section.img-attachment{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(rgba(253,76,130, 0.7), rgba(253,76,130, 0.7)), url(../images/bg_3.jpg) no-repeat center center /cover;
+    background-attachment: fixed;
+   }
+
+
+
+
+
+   
+
+
+
